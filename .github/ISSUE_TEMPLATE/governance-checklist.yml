@@ -1,6 +1,6 @@
-name: Governance checklist
-description: Test
-title: "Test"
+name: Opret Governance checkliste
+description: Opret Governance checkliste
+title: Opret Governance checkliste
 body:
 - type: checkboxes
   id: terms
