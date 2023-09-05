@@ -3,18 +3,10 @@ description: Test
 title: "Test"
 body:
 - type: checkboxes
-  id: operating-systems
-  attributes:
-    label: Which operating systems have you used?
-    description: You may select more than one.
-    options:
-      - label: macOS
-      - label: Windows
-      - label: Linux
-- type: checkboxes
   id: terms
   attributes:
     label: Code of Conduct
-    description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+    description: The [codebase] community adheres to the following principles
     options:
-      - label: I agree to follow this project's Code of Conduct
+      - label: [codebase] is open source.
+      - label: Kildekoden er overdraget og er placeret under OS2's github
