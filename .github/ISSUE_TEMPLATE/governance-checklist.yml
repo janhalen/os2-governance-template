@@ -8,10 +8,10 @@ body:
     label: Open Source
     description: The codebase community adheres to the following principles
     options:
-      - label: Codebase is open source.
+      - label: Codebase is open source
+        required: true
       - label: Kildekoden er overdraget og er placeret under OS2s github
-  validations:
-    required: true
+        required: true
 - type: dropdown
   attributes:
     label: License
