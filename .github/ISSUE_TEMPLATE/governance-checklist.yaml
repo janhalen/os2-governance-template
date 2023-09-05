@@ -1,30 +1,10 @@
-- type: textarea
-  attributes:
-    label: Operating System
-    description: What operating system are you using?
-    placeholder: macOS Big Sur
-    value: operating system
-  validations:
-    required: true
-- type: dropdown
-  attributes:
-    label: Version
-    description: What version of our software are you running?
-    multiple: false
-    options:
-      - 1.0.2 (Default)
-      - 1.0.3 (Edge)
-    default: 0
-  validations:
-    required: true
+body:
 - type: checkboxes
+  id: operating-systems
   attributes:
-    label: Code of Conduct
-    description: The Code of Conduct helps create a safe space for everyone. We require
-      that everyone agrees to it.
+    label: Which operating systems have you used?
+    description: You may select more than one.
     options:
-      - label: I agree to follow this project's Code of Conduct
-        required: true
-- type: markdown
-  attributes:
-    value: "Thanks for completing our form!"
+      - label: macOS
+      - label: Windows
+      - label: Linux
