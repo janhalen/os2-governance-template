@@ -5,8 +5,21 @@ body:
 - type: checkboxes
   id: terms
   attributes:
-    label: Code of Conduct
+    label: Open Source
     description: The codebase community adheres to the following principles
     options:
       - label: Codebase is open source.
       - label: Kildekoden er overdraget og er placeret under OS2s github
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: License
+    description: What Open Source License is used?
+    multiple: false
+    options:
+      - GPL3.0
+      - APL2.0
+    default: 0
+  validations:
+    required: true
