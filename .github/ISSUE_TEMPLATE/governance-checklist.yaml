@@ -1,3 +1,4 @@
+name: "Governance checklist"
 body:
 - type: checkboxes
   id: operating-systems
