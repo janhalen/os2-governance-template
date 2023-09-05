@@ -6,7 +6,7 @@ body:
   id: terms
   attributes:
     label: Code of Conduct
-    description: The [codebase] community adheres to the following principles
+    description: The codebase community adheres to the following principles
     options:
-      - label: [codebase] is open source.
-      - label: Kildekoden er overdraget og er placeret under OS2's github
+      - label: Codebase is open source.
+      - label: Kildekoden er overdraget og er placeret under OS2s github
