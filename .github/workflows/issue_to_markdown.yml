@@ -2,6 +2,8 @@ on:
   issues:
     types:
       - labeled
+permissions:
+  contents: write
 jobs:
   issue_to_markdown:
     runs-on: ubuntu-latest
