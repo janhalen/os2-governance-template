@@ -15,7 +15,7 @@ jobs:
       - uses: eunjae-lee/issue-to-markdown@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          dest: './'
+          dest: governance-${{ github.event.issue.number }}.md
           slug_key: 'title'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
