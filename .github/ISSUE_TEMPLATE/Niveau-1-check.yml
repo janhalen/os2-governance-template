@@ -1,0 +1,78 @@
+name: Niveau 1
+description: Standard issue template
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Relevans
+  - type: checkboxes
+    id: checkbox1
+    attributes:
+      label: Lokal værdi
+      options:
+        - label: Det bekræftes at løsningen skaber lokal værdi!
+  - type: input
+    id: input1
+    attributes:
+      label: Henvisning
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 2
+  - type: checkboxes
+    id: checkbox2
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm that I have filled out Section 2.
+  - type: input
+    id: input2
+    attributes:
+      label: Input for Section 2
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 3
+  - type: checkboxes
+    id: checkbox3
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm that I have filled out Section 3.
+  - type: input
+    id: input3
+    attributes:
+      label: Input for Section 3
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 4
+  - type: checkboxes
+    id: checkbox4
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm that I have filled out Section 4.
+  - type: input
+    id: input4
+    attributes:
+      label: Input for Section 4
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 5
+  - type: checkboxes
+    id: checkbox5
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm that I have filled out Section 5.
+  - type: input
+    id: input5
+    attributes:
+      label: Input for Section 5
+
