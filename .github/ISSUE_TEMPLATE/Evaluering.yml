@@ -47,13 +47,12 @@ body:
       label: Bekræftelse af relevans for Niveau 3
       options:
         - label: Ophæng til nationale strategier er til stede.
-  
   - type: input
     id: input3
     attributes:
       label: Henvisning
     
-    - type: markdown
+  - type: markdown
     attributes:
       value: |
         ## Formkrav
