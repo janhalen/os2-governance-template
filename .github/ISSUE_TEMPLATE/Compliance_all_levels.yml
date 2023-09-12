@@ -1,5 +1,5 @@
-name: Issue Template
-description: Standard issue template
+name: Governance compliance
+description: Governancemodellen skal sikre en gennemsigtighed i håndteringen og modenheden af produkterne
 body:
   - type: markdown
     attributes:
