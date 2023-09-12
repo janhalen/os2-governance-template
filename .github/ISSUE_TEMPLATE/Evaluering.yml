@@ -61,7 +61,7 @@ body:
         Produktets relevans er, om det skaber lokal værdi og potentiel værdi for andre offentlige organisationer. Den lokale værdi er beskrevet og kan overføres til andre.
   
   - type: checkboxes
-    id: checkbox1
+    id: checkbox11
     attributes:
       label: Bekræftelse af relevans for Niveau 1
       options:
@@ -72,7 +72,7 @@ body:
         - label: Sikkerhed skal være indtænkt.
         - label: Løsningens formål og værdi skal være beskrevet.
   - type: input
-    id: input1
+    id: input11
     attributes:
-      label: Input for Niveau 1
+      label: Input for Niveau 1.1
 
