@@ -1,8 +1,5 @@
-import re
-import yaml
-
 def convert_md_to_yaml(md_file, yaml_file):
-    with open(md_file, 'r') as f:
+    with open(md_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     yaml_dict = []
@@ -39,8 +36,8 @@ def convert_md_to_yaml(md_file, yaml_file):
                 })
                 checkbox_id += 1
 
-    with open(yaml_file, 'w') as f:
+    with open(yaml_file, 'w', encoding='utf-8') as f:
         yaml.dump(yaml_dict, f)
 
 # Usage:
-convert_md_to_yaml('gov.md', 'gov.yaml')
+convert_md_to_yaml('input.md', 'output.yaml')
