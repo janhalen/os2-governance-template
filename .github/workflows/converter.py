@@ -1,3 +1,6 @@
+import re
+import yaml
+
 def convert_md_to_yaml(md_file, yaml_file):
     with open(md_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
