@@ -3,10 +3,7 @@ description: Governancemodellen skal sikre en gennemsigtighed i håndteringen og
 body:
   - type: markdown
     attributes:
-      value: |
-        ## Relevans
-        ### Niveau 1 – Lokal værdi
-        Produktets relevans er, om det skaber lokal værdi og potentiel værdi for andre offentlige organisationer. Den lokale værdi være beskrevet og kunne overføres til andre.
+      value: Relevans
   - type: markdown
     attributes:
       label: Bekræft
