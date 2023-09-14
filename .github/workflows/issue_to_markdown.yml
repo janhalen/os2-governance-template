@@ -3,6 +3,9 @@ name: Issue to Markdown
 on:
   issues:
     types: [opened]
+    
+permissions:
+  contents: write
 
 jobs:
   convert:
