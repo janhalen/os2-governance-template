@@ -1,0 +1,522 @@
+name: Governance compliance
+description: Governancemodellen skal sikre en gennemsigtighed i håndteringen og modenheden af produkterne
+body:
+- attributes:
+    value: RELEVANS
+  type: markdown
+- attributes:
+    label: Bekræft
+    options:
+    - label: '---'
+  id: checkbox1
+  type: checkboxes
+- attributes:
+    label: '---'
+  id: input1
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Løsningen skaber lokal værdi
+  id: checkbox2
+  type: checkboxes
+- attributes:
+    label: Hvordan?
+  id: input2
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Løsningen skaber potentielt værdi for andre
+  id: checkbox3
+  type: checkboxes
+- attributes:
+    label: Hvordan?
+  id: input3
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Løsningen er accepteret af lokal linjeledelse
+  id: checkbox4
+  type: checkboxes
+- attributes:
+    label: fx tilslutningserklæring
+  id: input4
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: _Løsningen har tværkommunal potentiale (anbefaling)_
+  id: checkbox5
+  type: checkboxes
+- attributes:
+    label: Hvordan?
+  id: input5
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Ophæng til nationale strategier er til stede
+  id: checkbox6
+  type: checkboxes
+- attributes:
+    label: Hvordan/hvilke?
+  id: input6
+  type: input
+- attributes:
+    value: FORMKRAV
+  type: markdown
+- attributes:
+    label: Bekræft
+    options:
+    - label: '---'
+  id: checkbox7
+  type: checkboxes
+- attributes:
+    label: '---'
+  id: input7
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Kildekoden deles
+  id: checkbox8
+  type: checkboxes
+- attributes:
+    label: Indsæt link
+  id: input8
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Open Soruce licenskriterier overholdes
+  id: checkbox9
+  type: checkboxes
+- attributes:
+    label: Indsæt vedtaget licens
+  id: input9
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Udbudsregler og alm. lovformlighed er overholdt
+  id: checkbox10
+  type: checkboxes
+- attributes:
+    label: Kan udfyldes
+  id: input10
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er tænkt på sikkerheden i løsningen
+  id: checkbox11
+  type: checkboxes
+- attributes:
+    label: Hvordan?
+  id: input11
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Løsningens formål og værdi er beskrevet
+  id: checkbox12
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input12
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Kildekoden er overdraget og er placeret under OS2's github
+  id: checkbox13
+  type: checkboxes
+- attributes:
+    label: Indsæt link
+  id: input13
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Driftskrav til løsningen er dokumenteret
+  id: checkbox14
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input14
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Løsningen er dokumenteret på teknisk niveau
+  id: checkbox15
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input15
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Teknisk implementering af løsningen er dokumenteret
+  id: checkbox16
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input16
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: OS2's kommunikationskanaler anvendes (OS2.eu)
+  id: checkbox17
+  type: checkboxes
+- attributes:
+    label: Indsæt link(s)
+  id: input17
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: OS2's styringsværktøj benyttes (Jira)
+  id: checkbox18
+  type: checkboxes
+- attributes:
+    label: Indsæt link(s)
+  id: input18
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er kun en version af core koden (Master)
+  id: checkbox19
+  type: checkboxes
+- attributes:
+    label: ''
+  id: input19
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er udarbejdet præsentationsmateriale af løsningen
+  id: checkbox20
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input20
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er udarbejdet kommunikationsmateriale til strategisk niveau
+  id: checkbox21
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input21
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Best practice for implementering i organisationen dokumenteres
+  id: checkbox22
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input22
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Teknisk dokumentation indeholder best practice for kodestandarder i forhold
+        til de anvendte teknologier
+  id: checkbox23
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input23
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Drifts og vedligeholdelses setup er beskrevet
+  id: checkbox24
+  type: checkboxes
+- attributes:
+    label: Hvem drifter løsningen? er der sat økonomi af til vedligholdelse?
+  id: input24
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Rammearkitekturen og standarder er fulgt og afvigelser er forklaret
+  id: checkbox25
+  type: checkboxes
+- attributes:
+    label: ''
+  id: input25
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: _Løsningen er leveret i et containerformat fx docker (anbefaling)_
+  id: checkbox26
+  type: checkboxes
+- attributes:
+    label: ''
+  id: input26
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: _Uddanelses materiale er udarbejdet (anbefaling)_
+  id: checkbox27
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input27
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Politisk kommunikation er udarbejdet (Lokal + Omverden)
+  id: checkbox28
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input28
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Procesplan + procesansvar for driftsimplementering er udarbejdet ([eksempel](https://os2mo.readthedocs.io/en/development/operation/cookbook.html))
+  id: checkbox29
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input29
+  type: input
+- attributes:
+    value: STRATEGISK SAMMENHÆNG
+  type: markdown
+- attributes:
+    label: Bekræft
+    options:
+    - label: '---'
+  id: checkbox30
+  type: checkboxes
+- attributes:
+    label: '---'
+  id: input30
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Produktet har en kobling til [OS2's strategi](https://os2.eu/side/os2-mission-vision)
+  id: checkbox31
+  type: checkboxes
+- attributes:
+    label: Hvordan?
+  id: input31
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Løsningen understøtter innovation og open source
+  id: checkbox32
+  type: checkboxes
+- attributes:
+    label: Hvordan?
+  id: input32
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Produktets (forventlige) kobling til [OS2's mission, vision og strategi](https://os2.eu/side/os2-mission-vision)
+        er beskrevet
+  id: checkbox33
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input33
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er udarbejdet en vision og strategi for produktet
+  id: checkbox34
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input34
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Produktets kobling til og overensstemmelse med OS2's vision og strategi
+        er tilstede og beskrevet
+  id: checkbox35
+  type: checkboxes
+- attributes:
+    label: Hvordan?
+  id: input35
+  type: input
+- attributes:
+    value: GOVERNANCE
+  type: markdown
+- attributes:
+    label: Bekræft
+    options:
+    - label: '---'
+  id: checkbox36
+  type: checkboxes
+- attributes:
+    label: '---'
+  id: input36
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Produktet er oprettet i OS2's porteføljestyring (Hjemmeside)
+  id: checkbox37
+  type: checkboxes
+- attributes:
+    label: Indsæt link
+  id: input37
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der koordineres løbende med OS2-sekretariatet
+  id: checkbox38
+  type: checkboxes
+- attributes:
+    label: ''
+  id: input38
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er udpeget en projektleder/tovholder
+  id: checkbox39
+  type: checkboxes
+- attributes:
+    label: Hvem? evt. link til beskrivelse af ansvar/opgaver
+  id: input39
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Bestyrelsen er orienteret
+  id: checkbox40
+  type: checkboxes
+- attributes:
+    label: fx link til referat
+  id: input40
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Bestyrelsen har godkendt produktet
+  id: checkbox41
+  type: checkboxes
+- attributes:
+    label: fx link til referat
+  id: input41
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er nedsat en styregruppe
+  id: checkbox42
+  type: checkboxes
+- attributes:
+    label: Link til kommissorium
+  id: input42
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: _Der er nedsat en koordinationsgruppe (anbefaling)_
+  id: checkbox43
+  type: checkboxes
+- attributes:
+    label: Link til kommissorium
+  id: input43
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: _En projektmodel anvendes og er dokumenteret (anbefaling)_
+  id: checkbox44
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input44
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: _Review af kode foretages af tredjepart (anbefaling)_
+  id: checkbox45
+  type: checkboxes
+- attributes:
+    label: ''
+  id: input45
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: _Der er udarbejdet en tilslutningserklæring til sikring af økonomi (anbefaling)_
+  id: checkbox46
+  type: checkboxes
+- attributes:
+    label: Hvor?
+  id: input46
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Bestyrelsen har godkendt styregruppen
+  id: checkbox47
+  type: checkboxes
+- attributes:
+    label: fx link til referat
+  id: input47
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Bestyrelsen er repræsenteret i styregruppen
+  id: checkbox48
+  type: checkboxes
+- attributes:
+    label: fx link til referat
+  id: input48
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der foreligger en aftale der sikre økonomi til koordinerg og videreudvikling
+  id: checkbox49
+  type: checkboxes
+- attributes:
+    label: Link til aftale
+  id: input49
+  type: input
+- attributes:
+    label: Bekræft
+    options:
+    - label: Der er etableret et fagligt fælleskab bag løsningen hvor erfaringer kan
+        udveksles
+  id: checkbox50
+  type: checkboxes
+- attributes:
+    label: Henvisning til en faggruppe eller et forum
+  id: input50
+  type: input
+- attributes:
+    value: LOG
+  type: markdown
