@@ -22,7 +22,7 @@ jobs:
       - name: Save GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
-          run: echo "$GITHUB_CONTEXT" > event.json
+        run: echo "$GITHUB_CONTEXT" > event.json
 
       - name: Install dependencies
         run: |
