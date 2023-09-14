@@ -27,7 +27,7 @@ body:
   - type: checkboxes
     id: checkbox2
     attributes:
-      label: ekræftelse af relevans for Niveau 2
+      label: Bekræftelse af relevans for Niveau 2
       options:
         - label: Løsningen bør have et tværkommunal potentiale.
         - label: Accept fra lokal linjeledelse.
