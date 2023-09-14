@@ -2,7 +2,7 @@ name: Issue to Markdown
 
 on:
   issues:
-    types: [opened]
+    types: [opened, edited]
     
 permissions:
   contents: write
