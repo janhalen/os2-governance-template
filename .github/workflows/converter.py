@@ -40,7 +40,8 @@ def convert_md_to_yaml(md_file, yaml_file):
                 checkbox_id += 1
 
     with open(yaml_file, 'w', encoding='utf-8') as f:
-        yaml.dump(yaml_dict, f)
+        yaml.dump(yaml_dict, f, allow_unicode=True)
 
 # Usage:
+
 convert_md_to_yaml('gov.md', 'output.yaml')
