@@ -7,15 +7,11 @@ def evaluate_checkmarks(section):
         return None
     return all(mark == '- [x]' or mark == '- [X]' for mark in checkmarks)
 
-def apply_strikethrough(section):
-    lines = section.split('\n')
-    for i in range(len(lines)):
-        if lines[i] and not lines[i].startswith('-'):
-            lines[i] = '~~' + lines[i] + '~~'
-    return '\n'.join(lines)
-
-def add_compliant(section):
-    return section.rstrip() + ' COMPLIANT\n'
+def add_emoji(section, compliant):
+    if compliant:
+        return section.rstrip() + ' ✅\n'  # Add a green check mark emoji
+    else:
+        return section.rstrip() + ' ❌\n'  # Add a red cross mark emoji
 
 def main():
     with open('event.json', 'r') as f:
@@ -29,15 +25,8 @@ def main():
 
     for i in range(1, len(sections), 2):
         evaluation = evaluate_checkmarks(sections[i+1])
-        if evaluation is None:
-            continue
-        elif evaluation:
-            sections[i] = add_compliant(sections[i])
-        else:
-            sections[i] = apply_strikethrough(sections[i].rstrip() + '\n')
-            sections[i+1] = apply_strikethrough(sections[i+1])
-            if i+2 < len(sections):
-                sections[i+2] = apply_strikethrough(sections[i+2])
+        if evaluation is not None:
+            sections[i] = add_emoji(sections[i], evaluation)
 
     new_issue_body = ''.join(sections)
 
