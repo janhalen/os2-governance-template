@@ -15,42 +15,49 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Convert issue to markdown and evaluate compliance
-  run: |
-    ISSUE_BODY=$(jq --raw-output .issue.body "$GITHUB_EVENT_PATH")
+        run: |
+          ISSUE_BODY=$(jq --raw-output .issue.body "$GITHUB_EVENT_PATH")
 
-    echo "Converting issue to markdown..."
+          echo "Converting issue to markdown..."
 
-    # Replace markdown checkboxes with colored checks or crosses
-    MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g' | sed 's/- \[X\]/- ✅/g')
+          # Replace markdown checkboxes with colored checks or crosses
+          MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g' | sed 's/- \[X\]/- ✅/g')
 
-    # Ensure the docs/ directory exists
-    mkdir -p docs
+          # Ensure the docs/ directory exists
+          mkdir -p docs
 
-    # Write the converted issue body to a markdown file
-    echo "$MARKDOWN_BODY" > "./docs/issue.md"
+          echo "Evaluating compliance..."
 
-    echo "Evaluating compliance..."
+          # Split the issue body into sections by headers
+          IFS=$'\n' SECTIONS=($(echo "$ISSUE_BODY" | awk '/^### / {print NR}'))
 
-    # Split the issue body into sections by headers
-    IFS=$'\n' SECTIONS=($(echo "$ISSUE_BODY" | awk '/^### / {print NR}'))
+          for i in "${!SECTIONS[@]}"; do
+            START=${SECTIONS[$i]}
+            END=${SECTIONS[$i+1]}
 
-    for i in "${!SECTIONS[@]}"; do
-      START=${SECTIONS[$i]}
-      END=${SECTIONS[$i+1]}
+            if [ -z "$END" ]; then
+              SECTION=$(echo "$ISSUE_BODY" | tail -n +$START)
+            else
+              SECTION=$(echo "$ISSUE_BODY" | head -n $(($END-1)) | tail -n +$START)
+            fi
 
-      if [ -z "$END" ]; then
-        SECTION=$(echo "$ISSUE_BODY" | tail -n +$START)
-      else
-        SECTION=$(echo "$ISSUE_BODY" | head -n $(($END-1)) | tail -n +$START)
-      fi
+            # Check if all checkboxes are checked
+              if echo "$SECTION" | grep -q "\- \[ \]"; then
+                # Not compliant, apply strikethrough to the section header
+              HEADER=$(echo "$SECTION" | head -n 1)
+              STRIKETHROUGH_HEADER="~~$HEADER~~"
+              MARKDOWN_BODY=$(echo "$MARKDOWN_BODY" | sed "s/$HEADER/$STRIKETHROUGH_HEADER/")
+            else
+            # Compliant, add "Compliant" to the section header
+              HEADER=$(echo "$SECTION" | head -n 1)
+              COMPLIANT_HEADER="$HEADER (Compliant)"
+              MARKDOWN_BODY=$(echo "$MARKDOWN_BODY" | sed "s/$HEADER/$COMPLIANT_HEADER/")
+            fi
+          done
 
-      # Check if all checkboxes are checked
-      if echo "$SECTION" | grep -q "\- \[ \]"; then
-        echo "Not Compliant"
-      else
-        echo "Compliant"
-      fi
-    done
+          # Write the converted and evaluated issue body to a markdown file
+          echo "$MARKDOWN_BODY" > "./docs/issue.md"
+
 
       - name: Commit and push changes
         run: |
