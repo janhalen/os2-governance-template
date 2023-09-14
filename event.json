@@ -1,14 +1,14 @@
 {
-  "token": "ghs_hL5NAClMS7SDG2ZNbifKeLxIecffzo464oD7",
+  "token": "ghs_8sLRGSl1UgX4KphwbXjD7HWUFXmBbR4cWr1I",
   "job": "convert",
   "ref": "refs/heads/main",
-  "sha": "c30d3bcdbd01d8288105595414105caafa547927",
+  "sha": "e053a5a5cac1ee9a01cac5c24b79ab37cd95ef02",
   "repository": "janhalen/os2-governance-template",
   "repository_owner": "janhalen",
   "repository_owner_id": "50995332",
   "repositoryUrl": "git://github.com/janhalen/os2-governance-template.git",
-  "run_id": "6185244906",
-  "run_number": "37",
+  "run_id": "6185482829",
+  "run_number": "39",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -27,7 +27,7 @@
     "action": "edited",
     "changes": {
       "body": {
-        "from": "### Bekræftelse af relevans for Niveau 1\n\n- [x] Løsningen skal skabe lokal værdi.\n- [X] Løsningen skal have potentiel værdi for andre.\n\n### Input for Niveau 1\n\n_No response_\n\n### ekræftelse af relevans for Niveau 2\n\n- [x] Løsningen bør have et tværkommunal potentiale.\n- [ ] Accept fra lokal linjeledelse.\n\n### Input for Niveau 2\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 3\n\n- [ ] Ophæng til nationale strategier er til stede.\n\n### Henvisning\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 1\n\n- [ ] Kildekoden deles\n- [x] Open source licenskriterier overholdes.\n- [x] Udbudsregler er overholdt.\n- [x] Alm. lovformlighed er overholdt.\n- [ ] Sikkerhed skal være indtænkt.\n- [ ] Løsningens formål og værdi skal være beskrevet.\n\n### Input for Niveau 1.1\n\n_No response_"
+        "from": "### Bekræftelse af relevans for Niveau 1\n\n- [x] Løsningen skal skabe lokal værdi.\n- [X] Løsningen skal have potentiel værdi for andre.\n\n### Input for Niveau 1\n\n_No response_\n\n### ekræftelse af relevans for Niveau 2\n\n- [x] Løsningen bør have et tværkommunal potentiale.\n- [ ] Accept fra lokal linjeledelse.\n\n### Input for Niveau 2\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 3\n\n- [ ] Ophæng til nationale strategier er til stede.\n\n### Henvisning\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 1\n\n- [ ] Kildekoden deles\n- [ ] Open source licenskriterier overholdes.\n- [x] Udbudsregler er overholdt.\n- [x] Alm. lovformlighed er overholdt.\n- [x] Sikkerhed skal være indtænkt.\n- [ ] Løsningens formål og værdi skal være beskrevet.\n\n### Input for Niveau 1.1\n\n_No response_"
       }
     },
     "issue": {
@@ -35,7 +35,7 @@
       "assignee": null,
       "assignees": [],
       "author_association": "OWNER",
-      "body": "### Bekræftelse af relevans for Niveau 1\n\n- [x] Løsningen skal skabe lokal værdi.\n- [X] Løsningen skal have potentiel værdi for andre.\n\n### Input for Niveau 1\n\n_No response_\n\n### ekræftelse af relevans for Niveau 2\n\n- [x] Løsningen bør have et tværkommunal potentiale.\n- [ ] Accept fra lokal linjeledelse.\n\n### Input for Niveau 2\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 3\n\n- [ ] Ophæng til nationale strategier er til stede.\n\n### Henvisning\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 1\n\n- [ ] Kildekoden deles\n- [ ] Open source licenskriterier overholdes.\n- [x] Udbudsregler er overholdt.\n- [x] Alm. lovformlighed er overholdt.\n- [ ] Sikkerhed skal være indtænkt.\n- [ ] Løsningens formål og værdi skal være beskrevet.\n\n### Input for Niveau 1.1\n\n_No response_",
+      "body": "### Bekræftelse af relevans for Niveau 1\n\n- [x] Løsningen skal skabe lokal værdi.\n- [X] Løsningen skal have potentiel værdi for andre.\n\n### Input for Niveau 1\n\n_No response_\n\n### ekræftelse af relevans for Niveau 2\n\n- [x] Løsningen bør have et tværkommunal potentiale.\n- [ ] Accept fra lokal linjeledelse.\n\n### Input for Niveau 2\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 3\n\n- [ ] Ophæng til nationale strategier er til stede.\n\n### Henvisning\n\n_No response_\n\n### Bekræftelse af relevans for Niveau 1\n\n- [ ] Kildekoden deles\n- [ ] Open source licenskriterier overholdes.\n- [ ] Udbudsregler er overholdt.\n- [x] Alm. lovformlighed er overholdt.\n- [x] Sikkerhed skal være indtænkt.\n- [ ] Løsningens formål og værdi skal være beskrevet.\n\n### Input for Niveau 1.1\n\n_No response_",
       "closed_at": null,
       "comments": 0,
       "comments_url": "https://api.github.com/repos/janhalen/os2-governance-template/issues/12/comments",
@@ -67,7 +67,7 @@
       "state_reason": null,
       "timeline_url": "https://api.github.com/repos/janhalen/os2-governance-template/issues/12/timeline",
       "title": "Test",
-      "updated_at": "2023-09-14T12:12:57Z",
+      "updated_at": "2023-09-14T12:32:52Z",
       "url": "https://api.github.com/repos/janhalen/os2-governance-template/issues/12",
       "user": {
         "avatar_url": "https://avatars.githubusercontent.com/u/50995332?v=4",
@@ -169,7 +169,7 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/janhalen/os2-governance-template/pulls{/number}",
-      "pushed_at": "2023-09-14T12:11:51Z",
+      "pushed_at": "2023-09-14T12:32:20Z",
       "releases_url": "https://api.github.com/repos/janhalen/os2-governance-template/releases{/id}",
       "size": 77,
       "ssh_url": "git@github.com:janhalen/os2-governance-template.git",
@@ -219,15 +219,15 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "workflow_ref": "janhalen/os2-governance-template/.github/workflows/issue_to_markdown.yml@refs/heads/main",
-  "workflow_sha": "c30d3bcdbd01d8288105595414105caafa547927",
+  "workflow_sha": "e053a5a5cac1ee9a01cac5c24b79ab37cd95ef02",
   "workspace": "/home/runner/work/os2-governance-template/os2-governance-template",
   "action": "__run",
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "actions/cache",
   "action_ref": "v3",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_4caa1f3e-50ae-4a1b-b054-086ad79c047b",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_4caa1f3e-50ae-4a1b-b054-086ad79c047b",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_4caa1f3e-50ae-4a1b-b054-086ad79c047b",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_4caa1f3e-50ae-4a1b-b054-086ad79c047b",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_4caa1f3e-50ae-4a1b-b054-086ad79c047b"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_c2e98e59-3b9d-4554-89a4-336937c1cc18",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_c2e98e59-3b9d-4554-89a4-336937c1cc18",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_c2e98e59-3b9d-4554-89a4-336937c1cc18",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_c2e98e59-3b9d-4554-89a4-336937c1cc18",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_c2e98e59-3b9d-4554-89a4-336937c1cc18"
 }
