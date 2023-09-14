@@ -5,7 +5,7 @@ body:
     value: RELEVANS
   type: markdown
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: '---'
   id: checkbox1
@@ -15,7 +15,7 @@ body:
   id: input1
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Løsningen skaber lokal værdi
   id: checkbox2
@@ -25,7 +25,7 @@ body:
   id: input2
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Løsningen skaber potentielt værdi for andre
   id: checkbox3
@@ -35,7 +35,7 @@ body:
   id: input3
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Løsningen er accepteret af lokal linjeledelse
   id: checkbox4
@@ -45,7 +45,7 @@ body:
   id: input4
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: _Løsningen har tværkommunal potentiale (anbefaling)_
   id: checkbox5
@@ -55,7 +55,7 @@ body:
   id: input5
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Ophæng til nationale strategier er til stede
   id: checkbox6
@@ -68,7 +68,7 @@ body:
     value: FORMKRAV
   type: markdown
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: '---'
   id: checkbox7
@@ -78,7 +78,7 @@ body:
   id: input7
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Kildekoden deles
   id: checkbox8
@@ -88,7 +88,7 @@ body:
   id: input8
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Open Soruce licenskriterier overholdes
   id: checkbox9
@@ -98,7 +98,7 @@ body:
   id: input9
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Udbudsregler og alm. lovformlighed er overholdt
   id: checkbox10
@@ -108,7 +108,7 @@ body:
   id: input10
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er tænkt på sikkerheden i løsningen
   id: checkbox11
@@ -118,7 +118,7 @@ body:
   id: input11
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Løsningens formål og værdi er beskrevet
   id: checkbox12
@@ -128,7 +128,7 @@ body:
   id: input12
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Kildekoden er overdraget og er placeret under OS2's github
   id: checkbox13
@@ -138,7 +138,7 @@ body:
   id: input13
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Driftskrav til løsningen er dokumenteret
   id: checkbox14
@@ -148,7 +148,7 @@ body:
   id: input14
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Løsningen er dokumenteret på teknisk niveau
   id: checkbox15
@@ -158,7 +158,7 @@ body:
   id: input15
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Teknisk implementering af løsningen er dokumenteret
   id: checkbox16
@@ -168,7 +168,7 @@ body:
   id: input16
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: OS2's kommunikationskanaler anvendes (OS2.eu)
   id: checkbox17
@@ -178,7 +178,7 @@ body:
   id: input17
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: OS2's styringsværktøj benyttes (Jira)
   id: checkbox18
@@ -188,7 +188,7 @@ body:
   id: input18
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er kun en version af core koden (Master)
   id: checkbox19
@@ -198,7 +198,7 @@ body:
   id: input19
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er udarbejdet præsentationsmateriale af løsningen
   id: checkbox20
@@ -208,7 +208,7 @@ body:
   id: input20
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er udarbejdet kommunikationsmateriale til strategisk niveau
   id: checkbox21
@@ -218,7 +218,7 @@ body:
   id: input21
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Best practice for implementering i organisationen dokumenteres
   id: checkbox22
@@ -228,7 +228,7 @@ body:
   id: input22
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Teknisk dokumentation indeholder best practice for kodestandarder i forhold
         til de anvendte teknologier
@@ -239,7 +239,7 @@ body:
   id: input23
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Drifts og vedligeholdelses setup er beskrevet
   id: checkbox24
@@ -249,7 +249,7 @@ body:
   id: input24
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Rammearkitekturen og standarder er fulgt og afvigelser er forklaret
   id: checkbox25
@@ -259,7 +259,7 @@ body:
   id: input25
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: _Løsningen er leveret i et containerformat fx docker (anbefaling)_
   id: checkbox26
@@ -269,7 +269,7 @@ body:
   id: input26
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: _Uddanelses materiale er udarbejdet (anbefaling)_
   id: checkbox27
@@ -279,7 +279,7 @@ body:
   id: input27
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Politisk kommunikation er udarbejdet (Lokal + Omverden)
   id: checkbox28
@@ -289,9 +289,9 @@ body:
   id: input28
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
-    - label: Procesplan + procesansvar for driftsimplementering er udarbejdet ([eksempel](https://os2mo.readthedocs.io/en/development/operation/cookbook.html))
+    - label: Procesplan + procesansvar for driftsimplementering er udarbejdet
   id: checkbox29
   type: checkboxes
 - attributes:
@@ -302,7 +302,7 @@ body:
     value: STRATEGISK SAMMENHÆNG
   type: markdown
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: '---'
   id: checkbox30
@@ -312,7 +312,7 @@ body:
   id: input30
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Produktet har en kobling til [OS2's strategi](https://os2.eu/side/os2-mission-vision)
   id: checkbox31
@@ -322,7 +322,7 @@ body:
   id: input31
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Løsningen understøtter innovation og open source
   id: checkbox32
@@ -332,7 +332,7 @@ body:
   id: input32
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Produktets (forventlige) kobling til [OS2's mission, vision og strategi](https://os2.eu/side/os2-mission-vision)
         er beskrevet
@@ -343,7 +343,7 @@ body:
   id: input33
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er udarbejdet en vision og strategi for produktet
   id: checkbox34
@@ -353,7 +353,7 @@ body:
   id: input34
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Produktets kobling til og overensstemmelse med OS2's vision og strategi
         er tilstede og beskrevet
@@ -367,7 +367,7 @@ body:
     value: GOVERNANCE
   type: markdown
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: '---'
   id: checkbox36
@@ -377,7 +377,7 @@ body:
   id: input36
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Produktet er oprettet i OS2's porteføljestyring (Hjemmeside)
   id: checkbox37
@@ -387,7 +387,7 @@ body:
   id: input37
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der koordineres løbende med OS2-sekretariatet
   id: checkbox38
@@ -397,7 +397,7 @@ body:
   id: input38
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er udpeget en projektleder/tovholder
   id: checkbox39
@@ -407,7 +407,7 @@ body:
   id: input39
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Bestyrelsen er orienteret
   id: checkbox40
@@ -417,7 +417,7 @@ body:
   id: input40
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Bestyrelsen har godkendt produktet
   id: checkbox41
@@ -427,7 +427,7 @@ body:
   id: input41
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er nedsat en styregruppe
   id: checkbox42
@@ -437,7 +437,7 @@ body:
   id: input42
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: _Der er nedsat en koordinationsgruppe (anbefaling)_
   id: checkbox43
@@ -447,7 +447,7 @@ body:
   id: input43
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: _En projektmodel anvendes og er dokumenteret (anbefaling)_
   id: checkbox44
@@ -457,7 +457,7 @@ body:
   id: input44
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: _Review af kode foretages af tredjepart (anbefaling)_
   id: checkbox45
@@ -467,7 +467,7 @@ body:
   id: input45
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: _Der er udarbejdet en tilslutningserklæring til sikring af økonomi (anbefaling)_
   id: checkbox46
@@ -477,7 +477,7 @@ body:
   id: input46
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Bestyrelsen har godkendt styregruppen
   id: checkbox47
@@ -487,7 +487,7 @@ body:
   id: input47
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Bestyrelsen er repræsenteret i styregruppen
   id: checkbox48
@@ -497,7 +497,7 @@ body:
   id: input48
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der foreligger en aftale der sikre økonomi til koordinerg og videreudvikling
   id: checkbox49
@@ -507,7 +507,7 @@ body:
   id: input49
   type: input
 - attributes:
-    label: Bekræft
+    label: 'Bekræft'
     options:
     - label: Der er etableret et fagligt fælleskab bag løsningen hvor erfaringer kan
         udveksles
