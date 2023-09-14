@@ -12,25 +12,35 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Convert issue to markdown
-        id: convert
         run: |
-          ISSUE_NUMBER=$(jq --raw-output .issue.number "$GITHUB_EVENT_PATH")
           ISSUE_BODY=$(jq --raw-output .issue.body "$GITHUB_EVENT_PATH")
 
-          echo "Converting issue #$ISSUE_NUMBER to markdown..."
+          echo "Converting issue to markdown..."
 
           # Replace markdown checkboxes with colored checks or crosses
           MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g')
 
-          # Write the converted issue body to a markdown file
-          echo "$MARKDOWN_BODY" > "./docs/issue-$ISSUE_NUMBER.md"
+          # Ensure the docs/ directory exists
+          mkdir -p docs
 
-          echo "::set-output name=issue_number::$ISSUE_NUMBER"
+          # Write the converted issue body to a markdown file
+          echo "$MARKDOWN_BODY" > "./docs/issue.md"
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Convert issue #${{ steps.convert.outputs.issue_number }} to markdown"
+          git commit -m "Convert issue to markdown"
           git push
+
+      - name: Delete issue
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.delete({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
