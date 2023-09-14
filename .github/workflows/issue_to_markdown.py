@@ -4,7 +4,12 @@ import re
 def evaluate_checkmarks(section):
     # This function checks if all checkmarks in a section are marked
     checkmarks = re.findall(r'- \[[xX ]\]', section)
+    # If there are no checkmarks in the section, return False
+    if not checkmarks:
+        return False
+    # If there are checkmarks, check if all are marked
     return all(mark == '- [x]' or mark == '- [X]' for mark in checkmarks)
+
 
 def main():
     # Load the GitHub event data
