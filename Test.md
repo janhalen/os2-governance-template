@@ -5,7 +5,7 @@
 - [x] Løsningen skal skabe lokal værdi.
 - [X] Løsningen skal have potentiel værdi for andre.
 
-### Input for Niveau 1 COMPLIANT
+### Input for Niveau 1
 
 _No response_
 
@@ -14,7 +14,7 @@ _No response_
 - [x] Løsningen bør have et tværkommunal potentiale.
 - [ ] Accept fra lokal linjeledelse.
 
-### Input for Niveau 2 COMPLIANT
+### Input for Niveau 2
 
 _No response_
 
@@ -22,19 +22,19 @@ _No response_
 
 - [ ] Ophæng til nationale strategier er til stede.
 
-### Henvisning COMPLIANT
+### Henvisning
 
 _No response_
 
 ### Bekræftelse af relevans for Niveau 1
 
 - [ ] Kildekoden deles
-- [x] Open source licenskriterier overholdes.
+- [ ] Open source licenskriterier overholdes.
 - [x] Udbudsregler er overholdt.
 - [x] Alm. lovformlighed er overholdt.
 - [ ] Sikkerhed skal være indtænkt.
 - [ ] Løsningens formål og værdi skal være beskrevet.
 
-### Input for Niveau 1.1 COMPLIANT
+### Input for Niveau 1.1
 
 _No response_
