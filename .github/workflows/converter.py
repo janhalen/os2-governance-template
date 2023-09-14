@@ -43,4 +43,4 @@ def convert_md_to_yaml(md_file, yaml_file):
         yaml.dump(yaml_dict, f)
 
 # Usage:
-convert_md_to_yaml('input.md', 'output.yaml')
+convert_md_to_yaml('gov.md', 'gov.yaml')
