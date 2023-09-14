@@ -14,20 +14,43 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Convert issue to markdown
-        run: |
-          ISSUE_BODY=$(jq --raw-output .issue.body "$GITHUB_EVENT_PATH")
-      
-          echo "Converting issue to markdown..."
+      - name: Convert issue to markdown and evaluate compliance
+  run: |
+    ISSUE_BODY=$(jq --raw-output .issue.body "$GITHUB_EVENT_PATH")
 
-          # Replace markdown checkboxes with colored checks or crosses
-          MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g' | sed 's/- \[X\]/- ✅/g')
+    echo "Converting issue to markdown..."
 
-          # Ensure the docs/ directory exists
-          mkdir -p docs
+    # Replace markdown checkboxes with colored checks or crosses
+    MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g' | sed 's/- \[X\]/- ✅/g')
 
-          # Write the converted issue body to a markdown file
-          echo "$MARKDOWN_BODY" > "./docs/issue.md"
+    # Ensure the docs/ directory exists
+    mkdir -p docs
+
+    # Write the converted issue body to a markdown file
+    echo "$MARKDOWN_BODY" > "./docs/issue.md"
+
+    echo "Evaluating compliance..."
+
+    # Split the issue body into sections by headers
+    IFS=$'\n' SECTIONS=($(echo "$ISSUE_BODY" | awk '/^### / {print NR}'))
+
+    for i in "${!SECTIONS[@]}"; do
+      START=${SECTIONS[$i]}
+      END=${SECTIONS[$i+1]}
+
+      if [ -z "$END" ]; then
+        SECTION=$(echo "$ISSUE_BODY" | tail -n +$START)
+      else
+        SECTION=$(echo "$ISSUE_BODY" | head -n $(($END-1)) | tail -n +$START)
+      fi
+
+      # Check if all checkboxes are checked
+      if echo "$SECTION" | grep -q "\- \[ \]"; then
+        echo "Not Compliant"
+      else
+        echo "Compliant"
+      fi
+    done
 
       - name: Commit and push changes
         run: |
