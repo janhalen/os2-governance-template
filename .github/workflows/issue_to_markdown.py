@@ -11,8 +11,8 @@ def main():
     with open('event.json', 'r') as f:
         event_data = json.load(f)
 
-    # Get the issue data
-    issue_data = event_data['issue']
+    # Get the issue data from the 'event' object
+    issue_data = event_data['event']['issue']
     issue_title = issue_data['title']
     issue_body = issue_data['body']
 
