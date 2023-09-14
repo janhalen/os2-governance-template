@@ -34,7 +34,7 @@ body:
 - attributes:
     label: Hvordan?
   id: input3
-  type: input
+    type: input
 - attributes:
     label: Bekræft
     options:
