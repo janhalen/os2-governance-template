@@ -38,7 +38,7 @@ jobs:
           # Load the issue body from the GitHub event
           with open('event.json') as f:
               data = json.load(f)
-          issue_body = data['issue']['body']
+          issue_body = data['event']['issue']['body']
 
           # Split the issue body into sections by headers
           sections = re.split(r'(### .*\n)', issue_body)
