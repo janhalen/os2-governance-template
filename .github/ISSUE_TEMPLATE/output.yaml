@@ -3,7 +3,9 @@ description: Governancemodellen skal sikre en gennemsigtighed i håndteringen og
 body:
   type: markdown
     attributes:
-      value: ## Relevans
+      value: *Relevans*
+      options:
+    - label: '---'
   type: markdown
 - attributes:
     label: Bekræft
