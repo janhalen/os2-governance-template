@@ -26,7 +26,7 @@ _No response_ (Compliant)
 - [ ] Udbudsregler er overholdt.
 - [ ] Alm. lovformlighed er overholdt.
 - [ ] Sikkerhed skal være indtænkt.
-- [x] Løsningens formål og værdi skal være beskrevet. (Compliant)
+- [ ] Løsningens formål og værdi skal være beskrevet. (Compliant)
 ### Input for Niveau 1.1
 
 _No response_
