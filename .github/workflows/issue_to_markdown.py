@@ -2,20 +2,34 @@ import json
 import re
 
 def evaluate_checkmarks(section):
+    """
+    Evaluate if all checkmarks in a section are marked.
+    If no checkmarks are found, return None.
+    """
     checkmarks = re.findall(r'- \[[xX ]\]', section)
     if not checkmarks:
         return None
     return all(mark == '- [x]' or mark == '- [X]' for mark in checkmarks)
 
 def add_emoji(section, compliant):
+    """
+    Add a check mark emoji to compliant sections and a cross mark to non-compliant ones.
+    """
     if compliant:
-        return section.rstrip() + ' ✅\n'  # Add a green check mark emoji
+        return section.rstrip() + ' ✅\n'
     else:
-        return section.rstrip() + ' ❌\n'  # Add a red cross mark emoji
+        return section.rstrip() + ' ❌\n'
 
 def main():
-    with open('event.json', 'r') as f:
-        event_data = json.load(f)
+    """
+    Main function to evaluate GitHub issue sections and generate a markdown file.
+    """
+    try:
+        with open('event.json', 'r') as f:
+            event_data = json.load(f)
+    except FileNotFoundError:
+        print("The file 'event.json' was not found.")
+        return
 
     issue_data = event_data['event']['issue']
     issue_title = issue_data['title']
