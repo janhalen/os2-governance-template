@@ -1,6 +1,8 @@
+name: Governance compliance
+description: Governancemodellen skal sikre en gennemsigtighed i håndteringen og modenheden af produkterne
 body:
 - attributes:
-    value: '|n        RELEVANS'
+    value: 'RELEVANS'
   type: markdown
 - attributes:
     label: Bekræft
