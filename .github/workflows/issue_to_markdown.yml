@@ -14,50 +14,47 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyjq
+
       - name: Convert issue to markdown and evaluate compliance
         run: |
-          ISSUE_BODY=$(jq --raw-output .issue.body "$GITHUB_EVENT_PATH")
+          python -c "
+          import json
+          import re
 
-          echo "Converting issue to markdown..."
-
-          # Replace markdown checkboxes with colored checks or crosses
-          MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g' | sed 's/- \[X\]/- ✅/g')
-
-          # Ensure the docs/ directory exists
-          mkdir -p docs
-
-          echo "Evaluating compliance..."
+          # Load the issue body from the GitHub event
+          with open('event.json') as f:
+              data = json.load(f)
+          issue_body = data['issue']['body']
 
           # Split the issue body into sections by headers
-          IFS=$'\n' SECTIONS=($(echo "$ISSUE_BODY" | awk '/^### / {print NR}'))
+          sections = re.split(r'(### .*\n)', issue_body)
 
-          for i in "${!SECTIONS[@]}"; do
-            START=${SECTIONS[$i]}
-            END=${SECTIONS[$i+1]}
+          # Process each section
+          for i in range(1, len(sections), 2):
+              # Check if all checkboxes are checked
+              if '- [ ]' in sections[i]:
+                  # Not compliant, apply strikethrough to the section header
+                  sections[i-1] = '~~' + sections[i-1].rstrip() + '~~\n'
+              else:
+                  # Compliant, add "Compliant" to the section header
+                  sections[i-1] = sections[i-1].rstrip() + ' (Compliant)\n'
 
-            if [ -z "$END" ]; then
-              SECTION=$(echo "$ISSUE_BODY" | tail -n +$START)
-            else
-              SECTION=$(echo "$ISSUE_BODY" | head -n $(($END-1)) | tail -n +$START)
-            fi
+          # Join the sections back together
+          new_issue_body = ''.join(sections)
 
-            # Check if all checkboxes are checked
-              if echo "$SECTION" | grep -q "\- \[ \]"; then
-                # Not compliant, apply strikethrough to the section header
-              HEADER=$(echo "$SECTION" | head -n 1)
-              STRIKETHROUGH_HEADER="~~$HEADER~~"
-              MARKDOWN_BODY=$(echo "$MARKDOWN_BODY" | sed "s/$HEADER/$STRIKETHROUGH_HEADER/")
-            else
-            # Compliant, add "Compliant" to the section header
-              HEADER=$(echo "$SECTION" | head -n 1)
-              COMPLIANT_HEADER="$HEADER (Compliant)"
-              MARKDOWN_BODY=$(echo "$MARKDOWN_BODY" | sed "s/$HEADER/$COMPLIANT_HEADER/")
-            fi
-          done
-
-          # Write the converted and evaluated issue body to a markdown file
-          echo "$MARKDOWN_BODY" > "./docs/issue.md"
-
+          # Write the new issue body to a markdown file
+          with open('issue.md', 'w') as f:
+              f.write(new_issue_body)
+          "
 
       - name: Commit and push changes
         run: |
@@ -66,17 +63,3 @@ jobs:
           git add .
           git commit -m "Convert issue to markdown"
           git push
-
-# NEEDS CORRECT PERMISSIONS - left out for now
-#      - name: Close issue
-#        uses: actions/github-script@v5
-#        with:
-#          github-token: ${{ secrets.GITHUB_TOKEN }}
-#          script: |
-#            await github.rest.issues.update({
-#              owner: context.repo.owner,
-#              repo: context.repo.repo,
-#              issue_number: context.issue.number,
-#              state: 'closed'
-#            });
-
