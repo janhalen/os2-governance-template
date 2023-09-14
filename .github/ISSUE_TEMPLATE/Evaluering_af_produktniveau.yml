@@ -55,28 +55,28 @@ body:
     id: input5
     attributes:
       label: Hvordan/hvilke ophæng til nationale strategier er til stede?
-- type: markdown
-  attributes:
-    value: |
-      ## FORMKRAV
-- type: checkboxes
-  id: checkbox1
-  attributes:
-    label: Bekræft
-    options:
+  - type: markdown
+    attributes:
+     value: |
+       ## FORMKRAV
+  - type: checkboxes
+    id: checkbox1
+    attributes:
+      label: Bekræft
+      options:
       - label: Kildekoden deles.
-- type: input
-  id: input1
-  attributes:
-    label: Indsæt link
-- type: checkboxes
-  id: checkbox2
-  attributes:
-    label: Bekræft
-    options:
-      - label: Open Source licenskriterier overholdes.
-- type: input
-  id: input2
-  attributes:
-    label: Indsæt vedtaget licens
+  - type: input
+    id: input1
+    attributes:
+     label: Indsæt link
+  - type: checkboxes
+    id: checkbox2
+    attributes:
+     label: Bekræft
+     options:
+       - label: Open Source licenskriterier overholdes.
+  - type: input
+    id: input2
+    attributes:
+      label: Indsæt vedtaget licens
 
