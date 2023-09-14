@@ -17,11 +17,11 @@ jobs:
       - name: Convert issue to markdown
         run: |
           ISSUE_BODY=$(jq --raw-output .issue.body "$GITHUB_EVENT_PATH")
-
+      
           echo "Converting issue to markdown..."
 
           # Replace markdown checkboxes with colored checks or crosses
-          MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g')
+          MARKDOWN_BODY=$(echo "$ISSUE_BODY" | sed 's/- \[ \]/- ❌/g' | sed 's/- \[x\]/- ✅/g' | sed 's/- \[X\]/- ✅/g')
 
           # Ensure the docs/ directory exists
           mkdir -p docs
@@ -37,15 +37,16 @@ jobs:
           git commit -m "Convert issue to markdown"
           git push
 
-      - name: Close issue
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              state: 'closed'
-            });
+# NEEDS CORRECT PERMISSIONS - left out for now
+#      - name: Close issue
+#        uses: actions/github-script@v5
+#        with:
+#          github-token: ${{ secrets.GITHUB_TOKEN }}
+#          script: |
+#            await github.rest.issues.update({
+#              owner: context.repo.owner,
+#              repo: context.repo.repo,
+#              issue_number: context.issue.number,
+#              state: 'closed'
+#            });
 
