@@ -9,8 +9,8 @@ _No response_
 
 ### ekræftelse af relevans for Niveau 2
 
-- [X] Løsningen bør have et tværkommunal potentiale.
-- ❌ Accept fra lokal linjeledelse.
+- ❌ Løsningen bør have et tværkommunal potentiale.
+- [X] Accept fra lokal linjeledelse.
 
 ### Input for Niveau 2
 
