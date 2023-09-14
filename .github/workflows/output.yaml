@@ -1,5 +1,6 @@
+body:
 - attributes:
-    value: RELEVANS
+    value: '|n        RELEVANS'
   type: markdown
 - attributes:
     label: Bekræft
@@ -62,7 +63,7 @@
   id: input6
   type: input
 - attributes:
-    value: FORMKRAV
+    value: '|n        FORMKRAV'
   type: markdown
 - attributes:
     label: Bekræft
@@ -296,7 +297,7 @@
   id: input29
   type: input
 - attributes:
-    value: STRATEGISK SAMMENHÆNG
+    value: '|n        STRATEGISK SAMMENHÆNG'
   type: markdown
 - attributes:
     label: Bekræft
@@ -361,7 +362,7 @@
   id: input35
   type: input
 - attributes:
-    value: GOVERNANCE
+    value: '|n        GOVERNANCE'
   type: markdown
 - attributes:
     label: Bekræft
@@ -515,5 +516,8 @@
   id: input50
   type: input
 - attributes:
-    value: LOG
+    value: '|n        LOG'
   type: markdown
+description: OS2 arbejder med en tredelt governancemodel, der inddeler produkterne
+  i tre niveauer ud fra organisatorisk og teknisk modenhedsniveau.
+name: Evaluering af produktniveau
