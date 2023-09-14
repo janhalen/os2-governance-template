@@ -8,7 +8,11 @@ def evaluate_checkmarks(section):
     return all(mark == '- [x]' or mark == '- [X]' for mark in checkmarks)
 
 def apply_strikethrough(section):
-    return '~~' + section + '~~'
+    lines = section.split('\n')
+    for i in range(len(lines)):
+        if lines[i] and not lines[i].startswith('-'):
+            lines[i] = '~~' + lines[i] + '~~'
+    return '\n'.join(lines)
 
 def add_compliant(section):
     return section.rstrip() + ' COMPLIANT\n'
