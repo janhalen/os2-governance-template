@@ -1,3 +1,6 @@
+import json
+import re
+
 def evaluate_checkmarks(section):
     # This function checks if all checkmarks in a section are marked
     checkmarks = re.findall(r'- \[[xX ]\]', section)
