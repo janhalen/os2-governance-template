@@ -19,7 +19,7 @@ body:
   
   - type: textarea
     attributes:
-      label: Beskriv
+      label: Henvis til relevans
       description: |
         Links? References? Anything that will give us more context about the issue you are encountering!
       placeholder: |
@@ -41,7 +41,7 @@ body:
         - label: Open Source licenskriterier overholdes.
   - type: textarea
     attributes:
-      label: Beskriv
+      label: Henvis til overholdelse
       description: |
         Links? References? Anything that will give us more context about the issue you are encountering!
       placeholder: |
