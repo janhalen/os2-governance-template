@@ -18,7 +18,7 @@ body:
       label: Henvisning til gevinster
       description: |
         Links? References? Anything that will give us more context about the issue you are encountering!
-    placeholder: "Eksempel på input"
+      placeholder: "Eksempel på input"
     validations:
       required: false
   - type: checkboxes
