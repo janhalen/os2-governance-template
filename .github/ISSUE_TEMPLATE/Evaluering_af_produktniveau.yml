@@ -11,22 +11,17 @@ body:
     attributes:
       label: Bekræft
       options:
-        - label: |
-         ##### Løsningen skaber lokal værdi.
-  - type: input
-    id: input1
-    attributes:
-      label: Hvordan skaber løsningen lokal værdi?
-  - type: checkboxes
-    id: checkbox2
-    attributes:
-      label: Bekræft
-      options:
+        - label: Løsningen skaber lokal værdi.
         - label: Løsningen skaber potentielt værdi for andre.
-  - type: input
-    id: input2
+  - type: textarea
     attributes:
-      label: Hvordan skaber løsningen potentielt værdi for andre?
+      label: Henvisning til gevinster
+      description: |
+        Links? References? Anything that will give us more context about the issue you are encountering!
+
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: false
   - type: checkboxes
     id: checkbox3
     attributes:
