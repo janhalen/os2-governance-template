@@ -10,7 +10,7 @@ body:
     attributes:
       label: Bekræft
       options:
-        - label: Løsningen skaber lokal værdi.
+        - label: ##### Løsningen skaber lokal værdi.
   - type: input
     id: input1
     attributes:
