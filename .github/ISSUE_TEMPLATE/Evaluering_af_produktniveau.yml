@@ -9,7 +9,7 @@ body:
   - type: checkboxes
     id: checkbox1
     attributes:
-      label: Bekræft
+      label: Bekræft relevans
       options:
         - label: Løsningen skaber lokal værdi. (1)
         - label: Løsningen skaber potentielt værdi for andre. (1)
@@ -35,7 +35,7 @@ body:
   - type: checkboxes
     id: checkbox6
     attributes:
-      label: Bekræft
+      label: Bekræft formkrav
       options:
         - label: Kildekoden deles
         - label: Open Source licenskriterier overholdes.
