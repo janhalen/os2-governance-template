@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Relevans
+        # Relevans
   - type: checkboxes
     id: checkbox1
     attributes:
@@ -13,12 +13,19 @@ body:
       options:
         - label: Løsningen skaber lokal værdi.
         - label: Løsningen skaber potentielt værdi for andre.
+        - label: Løsningen er accepteret af lokal linjeledelse.
+        - label: Løsningen har tværkommunal potentiale
+        - label: Ophæng til nationale strategier er til stede.
+  
   - type: textarea
     attributes:
-      label: Henvisning til gevinster
+      label: Beskriv
       description: |
         Links? References? Anything that will give us more context about the issue you are encountering!
-      placeholder: "Eksempel på input"
+      placeholder: |
+        Henvisninger til
+          - Beskrivelser af gevinster og potentialer
+          - Godkendelser, f.eks tilslutningsaftaler 
     validations:
       required: false
   - type: checkboxes
@@ -40,7 +47,7 @@ body:
   - type: input
     id: input4
     attributes:
-      label: Hvordan har løsningen tværkommunal potentiale (anbefaling)?
+      label: (anbefaling)?
   - type: checkboxes
     id: checkbox5
     attributes:
