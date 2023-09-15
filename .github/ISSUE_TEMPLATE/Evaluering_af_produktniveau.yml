@@ -66,17 +66,17 @@ body:
       options:
       - label: Kildekoden deles.
   - type: input
-    id: input1
+    id: input6
     attributes:
      label: Indsæt link
   - type: checkboxes
-    id: checkbox2
+    id: checkbox6
     attributes:
      label: Bekræft
      options:
        - label: Open Source licenskriterier overholdes.
   - type: input
-    id: input2
+    id: input7
     attributes:
       label: Indsæt vedtaget licens
 
