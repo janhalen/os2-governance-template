@@ -11,11 +11,11 @@ body:
     attributes:
       label: Bekræft
       options:
-        - label: Løsningen skaber lokal værdi.
-        - label: Løsningen skaber potentielt værdi for andre.
-        - label: Løsningen er accepteret af lokal linjeledelse.
-        - label: Løsningen har tværkommunal potentiale
-        - label: Ophæng til nationale strategier er til stede.
+        - label: Løsningen skaber lokal værdi. (1)
+        - label: Løsningen skaber potentielt værdi for andre. (1)
+        - label: Løsningen er accepteret af lokal linjeledelse (2)
+        - label: Løsningen har tværkommunal potentiale (2)
+        - label: Ophæng til nationale strategier er til stede (3)
   
   - type: textarea
     attributes:
@@ -28,36 +28,6 @@ body:
           - Godkendelser, f.eks tilslutningsaftaler 
     validations:
       required: false
-  - type: checkboxes
-    id: checkbox3
-    attributes:
-      label: Bekræft
-      options:
-        - label: Løsningen er accepteret af lokal linjeledelse.
-  - type: input
-    id: input3
-    attributes:
-      label: Hvordan er løsningen accepteret af lokal linjeledelse?
-  - type: checkboxes
-    id: checkbox4
-    attributes:
-      label: Bekræft
-      options:
-        - label: _Løsningen har tværkommunal potentiale (anbefaling)_.
-  - type: input
-    id: input4
-    attributes:
-      label: (anbefaling)?
-  - type: checkboxes
-    id: checkbox5
-    attributes:
-      label: Bekræft
-      options:
-        - label: Ophæng til nationale strategier er til stede.
-  - type: input
-    id: input5
-    attributes:
-      label: Hvordan/hvilke ophæng til nationale strategier er til stede?
   - type: markdown
     attributes:
       value: |
@@ -67,18 +37,16 @@ body:
     attributes:
       label: Bekræft
       options:
-        - label: Kildekoden deles.
-  - type: input
-    id: input6
-    attributes:
-      label: Indsæt link
-  - type: checkboxes
-    id: checkbox7
-    attributes:
-      label: Bekræft
-      options:
+        - label: Kildekoden deles
         - label: Open Source licenskriterier overholdes.
-  - type: input
-    id: input7
+  - type: textarea
     attributes:
-      label: Indsæt vedtaget licens
+      label: Beskriv
+      description: |
+        Links? References? Anything that will give us more context about the issue you are encountering!
+      placeholder: |
+        Henvisninger til
+          - Projektstyring og sagsstyring
+          - ?
+    validations:
+      required: false
