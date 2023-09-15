@@ -60,7 +60,7 @@ body:
       value: |
         ## FORMKRAV
   - type: checkboxes
-    id: checkbox1
+    id: checkbox6
     attributes:
       label: Bekræft
       options:
@@ -70,7 +70,7 @@ body:
     attributes:
       label: Indsæt link
   - type: checkboxes
-    id: checkbox6
+    id: checkbox7
     attributes:
       label: Bekræft
       options:
