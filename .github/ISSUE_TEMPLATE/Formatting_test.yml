@@ -247,7 +247,7 @@ body:
         - label: Review af kode foretages af tredjepart (Niveau 2)
           required: false
         - label: Der er udarbejdet en tilslutningserklæring til sikring af økonomi (Niveau 2)
-          required:
+          required: false
         - label: Bestyrelsen har godkendt styregruppen (Niveau 3)
           required: false
         - label: Bestyrelsen er repræsenteret i styregruppen (Niveau 3)
