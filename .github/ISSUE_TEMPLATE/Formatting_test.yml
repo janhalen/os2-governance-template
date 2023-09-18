@@ -112,8 +112,15 @@ body:
             Teknisk dokumentation er placeret under ./docs i løsningens
             officielle repository (Niveau 1)
           required: false
-        - label: MANGLER N2 & N3
+        - label: Best practice for implementering i organisationen er dokumenteret
           required: false
+        - label: Teknisk dokumentation indeholder best practice for kodestandarder
+          required: false
+        - label: Drifts og vedligeholdelses setup er beskrevet
+          required: false
+        - label: Procesplan + procesansvar for driftsimplementering er udarbejdet
+          required: false
+          
   - type: textarea
     id: formkrav-dokumentation-henvisningner
     attributes:
@@ -150,7 +157,7 @@ body:
   - type: checkboxes
     id: formkrav-arkitektur-tjek
     attributes:
-      label: Arkitektur
+      label: 🧩 Arkitektur
       description: Læs mere -->
       options:
         - label: >-
@@ -166,6 +173,8 @@ body:
             til databeskyttelse gennem design og standardindstillinger (Niveau 2)
             (test)[https://www.datatilsynet.dk/hvad-siger-reglerne/podcast/privacy-by-design-og-privacy-by-default]
           required: false
+        - label : Rammearkitekturen og standarder er fulgt og/eller afvigelser er forklaret
+          required: false
         
   - type: textarea
     id: formkrav-arkitektur-henvisninger
@@ -178,3 +187,84 @@ body:
   - type: markdown
     attributes:
       value: '---'
+  - type: checkboxes
+    id: formkrav-strategi-tjek
+    attributes:
+      label: 🔭 Strategisk sammenhæng
+      description: Læs mere -->
+      options:
+        - label: >-
+            Produktet har en kobling til OS2's strategi
+            (Niveau 1)
+          required: false
+        - label: >-
+            Løsningen understøtter innovation og Open Source
+            (Niveau 1)
+          required: false
+        - label: >-
+            Produktets (forventlige) kobling til OS2's vision og strategi er beskrevet (Niveau 2)
+          required: false
+        - label : Produktets kobling til og overensstemmelse med OS2's vision og strategi er tilstede og beskrevet (Niveau 3)
+          required: false
+        
+  - type: textarea
+    id: formkrav-strategi-henvisninger
+    attributes:
+      label: 🔗 Henvisninger
+      description: Eksempler -->
+      placeholder: Henvisniger til strategi
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: '---'
+  - type: checkboxes
+    id: formkrav-strategi-tjek
+    attributes:
+      label: 🔭 Governance
+      description: Læs mere -->
+      options:
+        - label: >-
+            Produktet er oprettet i OS2's porteføljestyring
+            (Niveau 1)
+          required: false
+        - label: Der koordineres løbende med OS2-sekretariatet (Niveau 1)
+          required: false
+        - label: >-
+            Der er udpeget en projektleder/tovholder
+            (Niveau 1)
+          required: false
+        - label: Bestyrelsen er orienteret (Niveau 1)
+        - label: >-
+            Bestyrelsen har godkendt produktet (Niveau 2)
+          required: false
+        - label : Der er nedsat en styregruppe (Niveau 2)
+          required: false
+        - label : Der er nedsat en koordinationsgruppegruppe (Niveau 2)
+          required: false
+        - label : En projektmodel anvendes og er dokumenteret (Niveau 2)
+          required: false
+        - label: Review af kode foretages af tredjepart (Niveau 2)
+          required: false
+        - label: Der er udarbejdet en tilslutningserklæring til sikring af økonomi (Niveau 2)
+          required:
+        - label: Bestyrelsen har godkendt styregruppen (Niveau 3)
+          required: false
+        - label: Bestyrelsen er repræsenteret i styregruppen (Niveau 3)
+          required: false
+        - label: Der foreligger en aftale der sikre økonomi til koordinering og videreudvikling (Niveau 3)
+          required: false
+        - label: Der er etableret et fagligt fælleskab bag løsningen hvor erfaringer kan udveksles (Niveau 3)
+          required: false 
+  - type: textarea
+    id: formkrav-Governance-henvisninger
+    attributes:
+      label: 🔗 Henvisninger
+      description: Eksempler -->
+      placeholder: Henvisniger til strategi
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: '---'
+
