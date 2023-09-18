@@ -5,8 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        # R E L E V A N S 
-        > [!NOTE]
+        # R E L E V A N S |
+        > [!NOTE] |
         > Highlights information that users should take into account, even when skimming.
 
   - type: checkboxes
