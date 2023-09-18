@@ -5,7 +5,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        # R E L E V A N S
+        # R E L E V A N S 
+        > [!NOTE]
+        > Highlights information that users should take into account, even when skimming.
+
   - type: checkboxes
     id: checkbox1
     attributes:
@@ -26,27 +29,5 @@ body:
         Henvisninger til
           - Beskrivelser af gevinster og potentialer
           - Godkendelser, f.eks tilslutningsaftaler 
-    validations:
-      required: false
-  - type: markdown
-    attributes:
-      value: |
-        # F O R M K R A V
-  - type: checkboxes
-    id: checkbox6
-    attributes:
-      label: Bekræft formkrav
-      options:
-        - label: Kildekoden deles
-        - label: Open Source licenskriterier overholdes.
-  - type: textarea
-    attributes:
-      label: Henvis til overholdelse
-      description: |
-        Links? References? Anything that will give us more context about the issue you are encountering!
-      placeholder: |
-        Henvisninger til
-          - Projektstyring og sagsstyring
-          - ?
     validations:
       required: false
