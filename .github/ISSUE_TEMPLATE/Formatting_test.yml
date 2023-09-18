@@ -51,10 +51,6 @@ body:
             Alt kode til det officielle udgivne produkt er  indsendt til
             projektets officielle Os2 ejede repository (Niveau 2)
           required: false
-        - label: >-
-            Løsningen leveres i containerformat til drift og til videreudvikling
-            (Niveau 2)
-          required: false
   - type: textarea
     id: formkrav-deling-henvisninger
     attributes:
@@ -146,6 +142,37 @@ body:
       label: 🔗 Henvisninger
       description: Eksempler -->
       placeholder: Henvisniger til lovformelighed
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: '---'
+  - type: checkboxes
+    id: formkrav-arkitektur-tjek
+    attributes:
+      label: Arkitektur
+      description: Læs mere -->
+      options:
+        - label: >-
+            Løsningen leveres i containerformat til drift 
+            (Niveau 2)
+          required: false
+        - label: >-
+            Løsningen indeholder nem lokal udrulning af containere til udvikling 
+            (Niveau 2)
+          required: false
+        - label: >-
+            Løsningen har indarbejdet teknologier og praksis
+            til databeskyttelse gennem design og standardindstillinger (Niveau 2)
+            (test)[https://www.datatilsynet.dk/hvad-siger-reglerne/podcast/privacy-by-design-og-privacy-by-default]
+          required: false
+        
+  - type: textarea
+    id: formkrav-arkitektur-henvisninger
+    attributes:
+      label: 🔗 Henvisninger
+      description: Eksempler -->
+      placeholder: Henvisniger til arkitektur
     validations:
       required: true
   - type: markdown
