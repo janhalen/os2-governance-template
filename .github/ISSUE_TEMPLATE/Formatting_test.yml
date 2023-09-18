@@ -191,7 +191,7 @@ body:
     id: formkrav-strategi-tjek
     attributes:
       label: 🔭 Strategisk sammenhæng
-      description: Læs mere -->
+      description: Læs mere --> https://faq.os2.eu/strategisk-sammenhaeng-produktniveauer-os2-projekter-og-produkter
       options:
         - label: >-
             Produktet har en kobling til OS2's strategi
@@ -219,10 +219,10 @@ body:
     attributes:
       value: '---'
   - type: checkboxes
-    id: formkrav-strategi-tjek
+    id: formkrav-governance-tjek
     attributes:
-      label: 🔭 Governance
-      description: Læs mere -->
+      label: 🤝🏼 Governance
+      description: Læs mere --> https://faq.os2.eu/strategisk-sammenhaeng-produktniveauer-os2-projekter-og-produkter
       options:
         - label: >-
             Produktet er oprettet i OS2's porteføljestyring
@@ -261,7 +261,7 @@ body:
     attributes:
       label: 🔗 Henvisninger
       description: Eksempler -->
-      placeholder: Henvisniger til strategi
+      placeholder: Henvisninger til governance
     validations:
       required: true
   - type: markdown
